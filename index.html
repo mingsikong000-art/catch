@@ -9,18 +9,9 @@
 
 <script type="text/javascript" src="https://appx/web-view.min.js"></script>
 <script>
-  alert("222");
       // Send message to Mini Program.
-  my.postMessage({name:"test web-view"});
+  my.postMessage({name:"cashierPayment URL to pay by myCrossPay funciotn"});
 
-  // Did receive message from Mini Program.
-  my.onMessage = function(e) {
-    console.log(e); // {'sendToWebView': '1'}
-  }
-  // Check if is run in Mini Program environment
-  my.getEnv(function(res) {
-    console.log(res.miniprogram) // true
-  });
 </script>
 
     
